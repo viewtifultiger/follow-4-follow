@@ -7,6 +7,7 @@ An instagram bot that will make sure that everyone you follow is also following 
 Why not?
 
 ## Future Implementations
-- Save and encrypt credentials
-- Automatically unfollow inactive users
-- Automatic media posting
+- DM people who unfollowed
+- Unfollow inactive users
+- Media posting
+- LLM
