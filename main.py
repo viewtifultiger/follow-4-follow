@@ -1,7 +1,10 @@
 # import os
+from setup import setup
 from data import config
 from instagrapi import Client
 from login_manager import login_user
+
+setup()
 
 USERNAME, PASSWORD = config.USERNAME, config.PASSWORD
 

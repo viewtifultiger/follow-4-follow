@@ -46,7 +46,7 @@ def login_user(USERNAME : str, PASSWORD : str):
 		try:
 			logger.info("Attempting to login via username and password. username: %s" % USERNAME)
 			if cl.login(USERNAME, PASSWORD):
-				cl.dump_settings(f"{USERNAME}_session.json")
+				cl.dump_settings(f"data/{USERNAME}_session.json")
 				login_via_pw = True
 		except Exception as e:
 			logger.info("Couldn't login user using username and password %s" % e)
