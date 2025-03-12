@@ -13,7 +13,7 @@ def login_user(USERNAME : str, PASSWORD : str):
 	cl = Client()
 	
 	try:
-		session = cl.load_settings(f"{USERNAME}_session.json")
+		session = cl.load_settings(f"data/{USERNAME}_session.json")
 	except:
 		session = False
 
