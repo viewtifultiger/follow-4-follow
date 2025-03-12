@@ -54,4 +54,5 @@ def login_user(USERNAME : str, PASSWORD : str):
 	if not login_via_pw and not login_via_session:
 		raise Exception("Couldn't login user with either password or session")
 
+	print("Login successful...")
 	return cl

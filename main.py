@@ -1,18 +1,14 @@
 # import os
 from setup import setup
 from data import config
+from User import User
 from instagrapi import Client
-from login_manager import login_user
 
 setup()
 
 USERNAME, PASSWORD = config.USERNAME, config.PASSWORD
 
-cl = login_user(USERNAME, PASSWORD)
-cl.delay_range = [29, 50]
-print("Login successful...")
-
-personal_id = cl.user_id
+personal = User(USERNAME, PASSWORD)
 
 # followers = cl.user_followers(personal_id)
 # following = cl.user_following(personal_id)
